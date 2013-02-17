@@ -34,10 +34,7 @@ clobber:		clean
 						$(CLOBBER_FILEX)
 			$(RM) $(RM_FORCE)	$(ARCHDIR)/Dnull
 
-distclean:
-			$(RM) $(RM_RF)		$(CLEAN_FILES) \
-						.EDTMP *.bak OBJ/* \
-						$(SRCROOT)/libs/* $(SRCROOT)/incs/*
+distclean: clobber
 
 rmtarget:
 			$(RM) $(RM_FORCE)	$(RMTARGET)
